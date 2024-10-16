@@ -1,0 +1,37 @@
+Started by user [8mha:////4F49ljmtGuJPe9eZyrmYMer1Xyfa2OT5Ref1pEDpNHxyAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace C:\Users\Mayur\PycharmProjects\PythonSelFramework
+[PythonSelFramework] $ cmd /c call C:\Users\Mayur\AppData\Local\Temp\jenkins9635204936770233808.bat
+
+C:\Users\Mayur\PycharmProjects\PythonSelFramework>cd tests 
+
+C:\Users\Mayur\PycharmProjects\PythonSelFramework\tests>py.test --browser_name chrome --html=$WORKSPACE\reports\reports.html -v --junitxml="result.xml" 
+============================= test session starts =============================
+platform win32 -- Python 3.11.3, pytest-8.3.3, pluggy-1.5.0 -- C:\Users\Mayur\AppData\Local\Programs\Python\Python311\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.11.3', 'Platform': 'Windows-10-10.0.22631-SP0', 'Packages': {'pytest': '8.3.3', 'pluggy': '1.5.0'}, 'Plugins': {'html': '4.1.1', 'metadata': '3.1.1'}, 'CI': 'true', 'BUILD_NUMBER': '9', 'BUILD_ID': '9', 'BUILD_URL': 'http://localhost:8080/job/SeleniumPythonTesting/9/', 'NODE_NAME': 'built-in', 'JOB_NAME': 'SeleniumPythonTesting', 'BUILD_TAG': 'jenkins-SeleniumPythonTesting-9', 'EXECUTOR_NUMBER': '1', 'JENKINS_URL': 'http://localhost:8080/', 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-21', 'WORKSPACE': 'C:\\Users\\Mayur\\PycharmProjects\\PythonSelFramework'}
+rootdir: C:\Users\Mayur\PycharmProjects\PythonSelFramework\tests
+plugins: html-4.1.1, metadata-3.1.1
+collecting ... collected 3 items
+
+test_HomePage.py::TestHomePage::test_formSubmission[getData0] PASSED     [ 33%]
+test_HomePage.py::TestHomePage::test_formSubmission[getData1] PASSED     [ 66%]
+test_e2e.py::TestOne::test_e2e PASSED                                    [100%]
+
+============================== warnings summary ===============================
+conftest.py:32
+  C:\Users\Mayur\PycharmProjects\PythonSelFramework\tests\conftest.py:32: PytestDeprecationWarning: The hookimpl pytest_runtest_makereport uses old-style configuration options (marks or attributes).
+  Please use the pytest.hookimpl(hookwrapper=True) decorator instead
+   to configure the hooks.
+   See https://docs.pytest.org/en/latest/deprecations.html#configuring-hook-specs-impls-using-markers
+    @pytest.mark.hookwrapper
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\Mayur\PycharmProjects\PythonSelFramework\tests\result.xml -
+- Generated html report: file:///C:/Users/Mayur/PycharmProjects/PythonSelFramework/reports/reports.html -
+======================== 3 passed, 1 warning in 18.51s ========================
+
+C:\Users\Mayur\PycharmProjects\PythonSelFramework\tests>exit 0 
+Recording test results
+[Checks API] No suitable checks publisher found.
+Finished: SUCCESS

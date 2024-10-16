@@ -1,0 +1,31 @@
+Started by user [8mha:////4F49ljmtGuJPe9eZyrmYMer1Xyfa2OT5Ref1pEDpNHxyAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace C:\Users\Mayur\PycharmProjects\PythonSelFramework
+[PythonSelFramework] $ cmd /c call C:\Users\Mayur\AppData\Local\Temp\jenkins9981690557785434660.bat
+
+C:\Users\Mayur\PycharmProjects\PythonSelFramework>cd tests 
+
+C:\Users\Mayur\PycharmProjects\PythonSelFramework\tests>py.test --browser_name firefox --html=$WORKSPACE\reports\reports.html 
+============================= test session starts =============================
+platform win32 -- Python 3.11.3, pytest-8.3.3, pluggy-1.5.0
+rootdir: C:\Users\Mayur\PycharmProjects\PythonSelFramework\tests
+plugins: html-4.1.1, metadata-3.1.1
+collected 3 items
+
+test_HomePage.py ..                                                      [ 66%]
+test_e2e.py .                                                            [100%]
+
+============================== warnings summary ===============================
+conftest.py:32
+  C:\Users\Mayur\PycharmProjects\PythonSelFramework\tests\conftest.py:32: PytestDeprecationWarning: The hookimpl pytest_runtest_makereport uses old-style configuration options (marks or attributes).
+  Please use the pytest.hookimpl(hookwrapper=True) decorator instead
+   to configure the hooks.
+   See https://docs.pytest.org/en/latest/deprecations.html#configuring-hook-specs-impls-using-markers
+    @pytest.mark.hookwrapper
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- Generated html report: file:///C:/Users/Mayur/PycharmProjects/PythonSelFramework/reports/reports.html -
+======================== 3 passed, 1 warning in 36.06s ========================
+
+C:\Users\Mayur\PycharmProjects\PythonSelFramework\tests>exit 0 
+Finished: SUCCESS
